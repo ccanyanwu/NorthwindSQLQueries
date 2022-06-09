@@ -1,0 +1,105 @@
+/* css reset */
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header component */
+h1 {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+p {
+  padding: 2rem 4rem;
+  text-align: center;
+}
+
+/* Query search */
+#querySearch {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 5rem;
+}
+@media only screen and (max-width: 768px) {
+  #querySearch {
+    flex-direction: column;
+  }
+
+  #querySearch div:last-child{margin: 1rem auto}
+}
+
+#querySearch > div > input {
+  border-radius: 30px;
+  display: block;
+  height: 3rem;
+  margin: 0 auto;
+  padding-left: 1rem;
+  width: 10rem;
+}
+
+#querySearch > div > p{
+  color: red;
+  margin-top: -1rem;
+}
+
+
+
+select{
+  border-radius: .25rem;
+  height: 2.5rem;
+  margin-top: .5rem;
+  outline: none;
+}
+@media only screen and (max-width: 768px){
+
+}
+
+/*Result Table */
+.flex {
+  width: 100%;
+  overflow-x: auto;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 25px auto;
+  font-size: 0.9em;
+  min-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+caption {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+caption,
+th {
+  text-transform: uppercase;
+}
+
+table thead tr {
+  background-color: #009879;
+  color: #ffffff;
+  text-align: left;
+}
+
+table th,
+table td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+}
+
+table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+table tbody tr:last-of-type {
+  border-bottom: 2px solid #009879;
+}
